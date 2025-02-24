@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formularioo.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div id="introformulario">FORMULARIO DE INSCRIPCION A LA FES ARAGON</div>
+    <div class="nombre">
+        <h2>Ingresa Tu Nombre (Iniciando por Apellidos):</h2>
+        <form action="procesar.php" method="POST">
+            <label for="nombre">Nombre:  </label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+        
+    </div>    
+    <div class="numero_cuenta">
+        <h2>Ingresa Tu Número de Cuenta:</h2>
+        
+            <label for="numero_cuenta">Número de cuenta: </label>
+            <input type="text" id="numero_cuenta" name="numero_cuenta" pattern="\d{9}" minlength="9" maxlength="9" required>
+            
+        
+    </div>
+    <div id="correo">
+        <h2>Ingresa tu Correo Electrónico: </h2>
+        
+            <label for="correo">Correo Electrónico: </label>
+            <input type="email" id="correo" name="correo" pattern=".+@.+\.com" required>
+           
+        
+    </div>    
+    <div id="telefono">
+        <h2>Ingresa tu Número de Teléfono: </h2>
+        
+            <label for="teléfono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" pattern="\d{10}" minlength="10" maxlength="10" required>
+            
+        
+    </div>
+    <div id="carrera">
+        <h2>¿A que carrera perteneces?</h2>
+        
+            <label for="carrera">Carrera:</label>
+            <select id="carrera" name="carrera" required>
+                    <option value="Seleccion">Selecciona la carrera a la que perteneces</option>
+                    <option value="Ingeniería en Computación">Ingeniería en Computación</option>
+                    <option value="Ingeniería Civil">Ingeniería Civil</option>
+                    <option value="Ingeniería Eléctrica Electrónica">Ingeniería Eléctrica Electrónica</option>
+                    <option value="Ingeniería Industrial">Ingeniería Industrial</option>
+                    <option value="Ingeniería Mecánica">Ingeniería Mecánica</option>
+                    <option value="Comunicación y Periodismo">Comunicación y Periodismo</option>
+                    <option value="Derecho">Derecho</option>
+                    <option value="Economía">Economía</option>
+                    <option value="Planificación para el Desarrollo Agropecuario">Planificación para el Desarrollo Agropecuario</option>
+                    <option value="Relaciones Internacionales">Relaciones Internacionales</option>
+                    <option value="Sociología">Sociología</option>
+                    <option value="Arquitectura">Arquitectura</option>
+                    <option value="Diseño Industrial">Diseño Industrial</option>
+                    <option value="Pedagogía">Pedagogía</option>
+            </select>        
+        
+    </div>
+    <div id="generacion">
+       <h2>¿A que generación perteneces?:</h2>
+       
+            <label for="generacion">Generación: </label>
+            <input type="text" id="generacion" name="generacion" pattern="\d{4}" minlength="4" maxlength="4" required>
+            
+        
+    </div>
+    <div id="direccion">
+        <h2>¿Cual es tu direccion?: </h2>
+        
+            <label for="direccion">Direccion: </label>
+            <input type="text" id="direccion" name="direccion" required>
+            
+        
+    </div>
+    <div id="sexo">
+        <h2>¿Cual es tu sexo?</h2>
+        <div class="radio-group">
+            <div class="radio-option">
+                <input type="radio" id="masculino" name="sexo" value="Masculino" required>
+                <label for="masculino">Masculino</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" id="femenino" name="sexo" value="Femenino">
+                <label for="femenino">Femenino</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" id="sin_definir" name="sexo" value="Sin definir">
+                <label for="sin_definir">Sin definir</label>
+            </div>
+        </div>
+        
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

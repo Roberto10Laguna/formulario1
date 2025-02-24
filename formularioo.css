@@ -1,0 +1,74 @@
+body{
+    text-align: center;
+    justify-content: center;
+    background-image: url(fesAragon2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
+
+
+#introformulario{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;    
+}
+
+input {
+    padding: 8px;
+    margin-top: 10px;
+    width: 40%;
+    border: blue;
+    border-radius: 4px;
+}
+
+button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    padding: 16px 20px;
+    margin-top: 10px;
+    border: slateblue;
+    background: blue;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+label{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+select{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    padding: 8px 12px;
+    margin-top: 10px;
+    border: slateblue;
+    background: white;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+
+.radio-option {
+    display: flex;
+    align-items: right;
+    gap: 1px;
+}
+
